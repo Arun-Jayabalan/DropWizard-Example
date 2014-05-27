@@ -14,10 +14,41 @@
             <artifactId>dropwizard-core</artifactId>
             <version>0.6.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.excilys.ebi.gatling.highcharts</groupId>
+            <artifactId>gatling-charts-highcharts</artifactId>
+            <version>1.5.5</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>excilys</id>
+            <name>Excilys Repository</name>
+            <url>http://repository.excilys.com/content/groups/public</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>excilys</id>
+            <name>Excilys Repository</name>
+            <url>http://repository.excilys.com/content/groups/public</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+
+
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>com.excilys.ebi.gatling</groupId>
+                <artifactId>gatling-maven-plugin</artifactId>
+                <version>1.5.5</version>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

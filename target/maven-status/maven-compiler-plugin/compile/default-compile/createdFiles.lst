@@ -1,0 +1,4 @@
+com/arun/example/dropwizard/hello/HelloResource.class
+com/arun/example/dropwizard/ExampleService.class
+com/arun/example/dropwizard/config/MessagesConfiguration.class
+com/arun/example/dropwizard/config/ExampleServiceConfiguration.class
